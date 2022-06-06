@@ -54,8 +54,6 @@
 
 
 #splash .splash-inner:after {
--webkit-mask: url("#{$Logo}") no-repeat;
-  mask: url("#{$Logo}") no-repeat;
   content: "";
   background: black;
   background-size: cover;
