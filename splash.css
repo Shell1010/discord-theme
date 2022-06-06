@@ -1,0 +1,78 @@
+
+#splash .splash-inner {
+  text-align: center;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+
+
+#splash:before{
+  background: purple;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+#splash .splash-inner video.loaded {
+ display: none;
+}
+
+#splash:after{
+
+  content: "";
+  background: green;
+  background-size: cover;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: 80px;
+  left: 50px;
+}
+
+#splash .splash-inner .splash-text > span.splash-status {
+  font-family: Quicksand;
+  color: red;
+  font-size: 12px;
+  margin-top: 200px;
+  font-style: normal;
+}
+
+
+.progress .progress-bar {
+  background-color: white;
+}
+
+.progress .progress-bar .complete {
+  background-color: #010313d2;
+}
+
+
+#splash .splash-inner:after {
+-webkit-mask: url("#{$Logo}") no-repeat;
+  mask: url("#{$Logo}") no-repeat;
+  content: "";
+  background: black;
+  background-size: cover;
+  position: fixed;
+  width: 100px;
+  height: 32px;
+  bottom: 6px;
+  left: 10px;
+}
+
+
+#splash .splash-inner:before {
+  content: "v2.1.2";
+  position: fixed;
+  font-family: Quicksand;
+  font-size: 14px;
+  color: blue;
+  bottom: 14px;
+  right: 14px;
+}
